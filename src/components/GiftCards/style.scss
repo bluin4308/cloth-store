@@ -1,0 +1,78 @@
+.gifts {
+  display: flex;
+  min-height: 100vh;
+
+  .description {
+    font-size: 1.2rem;
+    margin: 2rem 0;
+  }
+
+  .loader {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 7rem;
+  }
+
+  .loader-container {
+    width: 100%;
+  }
+
+  .content {
+    flex-basis: 80%;
+
+    .coupon {
+      padding: 1rem 2rem;
+      margin: 1rem 0;
+      border: 1px solid lightgray;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+
+      .title {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        font-family: monospace;
+        cursor: pointer;
+      }
+
+      .discount {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .gifts {
+    .content {
+      .coupon {
+        padding: 1rem 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .gifts {
+    .content {
+      .coupon {
+        padding: 1rem 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .gifts {
+    .content {
+      .coupon {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+        padding: 1rem 1rem;
+      }
+    }
+  }
+}
