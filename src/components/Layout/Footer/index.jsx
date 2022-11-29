@@ -12,15 +12,9 @@ export default memo(function Footer() {
         <ContactForm />
         <div className="about">
           <p className="label">About</p>
+          <a href="https://github.com/bluin4308/cloth-store">Source code</a>
           <Link to="about">About us</Link>
-          <Link to="#">We're hiring</Link>
-          <Link to="#">Support</Link>
-          <Link to="#">Find store</Link>
-          <Link to="#">Shipment</Link>
-          <Link to="#">Payment</Link>
           <Link to="gifts">Gift card</Link>
-          <Link to="#">Return</Link>
-          <Link to="#">Help</Link>
           {/* навлинки  */}
         </div>
         <div className="other">
